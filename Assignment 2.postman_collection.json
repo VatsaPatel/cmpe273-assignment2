@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Assignment 2",
+		"_postman_id": "6f7af2b5-dadf-f7a0-28de-2a732b6d9241",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:5000/api/tests",
+			"request": {
+				"url": "127.0.0.1:5000/api/tests",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject\": \"Math\",\r\n    \"answer_keys\": {\r\n         \"1\": \"A\",\r\n        \"2\": \"B\",\r\n        \"3\": \"C\",\r\n        \"4\": \"D\",\r\n        \"5\": \"A\",\r\n        \"6\": \"B\",\r\n        \"7\": \"C\",\r\n        \"8\": \"D\",\r\n        \"9\": \"A\",\r\n        \"10\": \"B\",\r\n        \"11\": \"A\",\r\n        \"12\": \"B\",\r\n        \"13\": \"C\",\r\n        \"14\": \"D\",\r\n        \"15\": \"A\",\r\n        \"16\": \"B\",\r\n        \"17\": \"C\",\r\n        \"18\": \"D\",\r\n        \"19\": \"A\",\r\n        \"20\": \"B\",\r\n        \"21\": \"A\",\r\n        \"22\": \"B\",\r\n        \"23\": \"C\",\r\n        \"24\": \"D\",\r\n        \"25\": \"A\",\r\n        \"26\": \"B\",\r\n        \"27\": \"C\",\r\n        \"28\": \"D\",\r\n        \"29\": \"A\",\r\n        \"30\": \"B\",\r\n        \"31\": \"A\",\r\n        \"32\": \"B\",\r\n        \"33\": \"C\",\r\n        \"34\": \"D\",\r\n        \"35\": \"A\",\r\n        \"36\": \"B\",\r\n        \"37\": \"C\",\r\n        \"38\": \"D\",\r\n        \"39\": \"A\",\r\n        \"40\": \"B\",\r\n        \"41\": \"A\",\r\n        \"42\": \"B\",\r\n        \"43\": \"C\",\r\n        \"44\": \"D\",\r\n        \"45\": \"A\",\r\n        \"46\": \"B\",\r\n        \"47\": \"C\",\r\n        \"48\": \"D\",\r\n        \"49\": \"A\",\r\n        \"50\": \"B\"\r\n    }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/tests/1/scantrons",
+			"request": {
+				"url": "http://localhost:5000/api/tests/1/scantrons",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"type": "file",
+							"src": "scantron-1.json"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/tests/48",
+			"request": {
+				"url": "127.0.0.1:5000/api/tests/48",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
